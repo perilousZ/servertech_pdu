@@ -1,0 +1,4 @@
+{
+    "name": "ServerTech PDU",
+    "domains": ["switch", "sensor"]
+}
