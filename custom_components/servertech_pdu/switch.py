@@ -3,6 +3,7 @@ from __future__ import annotations
 import logging
 from typing import Any
 
+from .const import DOMAIN
 from .entity import CoordinatedServerTechEntity
 from .outlet import PduOutlet
 
@@ -10,8 +11,6 @@ from homeassistant.components.switch import SwitchEntity
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant, callback
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
-
-from .const import DOMAIN
 
 _LOGGER = logging.getLogger(__name__)
 
