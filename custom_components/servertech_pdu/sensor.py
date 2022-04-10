@@ -32,7 +32,7 @@ async def async_setup_entry(
     parent = coordinator.device
 
     description = SensorEntityDescription(
-        key=ATTR_CURRENT_POWER_W,
+        key='current_power_w',
         native_unit_of_measurement=POWER_WATT,
         device_class=SensorDeviceClass.POWER,
         state_class=SensorStateClass.MEASUREMENT,
