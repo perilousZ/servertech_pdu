@@ -42,7 +42,11 @@ class ServerTechRebootButton(CoordinatedServerTechEntity, ButtonEntity):
         self._attr_unique_id = (
             f"reboot_{self.device.id}_{coordinator.device.mac_address}"
         )
-
+    @property
+    def icon(self) -> str:
+        """Return the icon for the reboot button."""
+        return "mdi:restart"
+    
     async def async_press(self) -> None:
         """Press the button."""
         self.device.reboot()
