@@ -7,7 +7,7 @@ from homeassistant.components.sensor import (
     SensorEntityDescription,
     SensorStateClass,
 )
-from homeassistant.components.switch import ATTR_CURRENT_POWER_W
+
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import (
     POWER_WATT,
